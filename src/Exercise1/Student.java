@@ -6,20 +6,20 @@ public class Student {
     public int mark2;
     public double average;
 
-    public Student(String n) {
+    public Student(String n) {  //
         name = n;
         mark1 = 0;
         mark2 = 0;
         average = 0.0;
     }
 
-    public void setMarks(int x, int y) {
+    public void setMarks(int x, int y) {    //Method to set the marks of the student
         mark1 = x;
         mark2 = y;
     }
 
-    public void calcAverage() {
-        average = (mark1 + mark2) / 2;
+    public void calcAverage() { //Method to calculate the average of the Student
+        average = (mark1 + mark2) / 2.0;
     }
 
     public String message() {
