@@ -37,6 +37,6 @@ public class Bank_Account {
     }
 
     public void applyInterest (){
-        balance = balance + (balance * interest_rate);
+        balance = balance - (balance * interest_rate);
     }
 }
