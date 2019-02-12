@@ -1,6 +1,39 @@
 package Exercise1;
 
+/**
+ * Enfei Zhang
+ * Ms. Krasteva
+ * February 12, 2018
+ * This is a program that creates objects using the House, Car, Animal and Student class
+ *
+ * Variable Dictionary
+ * Name         Type       Purpose
+ * Lamborghini  Car        Car object
+ * Mazda        Car        Car object
+ * Ford         Car        Car object
+ * Infinity     Car        Car object
+ * BMW          Car        Car object
+ * House1       House      House object
+ * Home         House      House object
+ * Neighbour    House      House object
+ * House2       House      House object
+ * House3       House      House object
+ * Dog          Animal     Animal object
+ * Cat          Animal     Animal object
+ * Horse        Animal     Animal object
+ * Elephant     Animal     Animal object
+ * Mouse        Animal     Animal object
+ * Children     Student[]  Student object
+ * Class        Student[]  Student object
+ * totAvg       double     variable to store the total averages of the students
+ */
 public class Exercise1Driver{
+    /**
+     * The first for loop sets the marks for the first 5 students
+     * The second for loop moves the students from the Children array to the Class array
+     * The third for loop Goes through the Class array
+     * The if statement checks if there is a student in that spot in the array
+     */
     public static void main(String[] args) {
         //Objects in the Exercise1.Car class
         Car Lamborghini = new Car ("Lamborghini", "Miura", 2450,4900);

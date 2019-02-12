@@ -1,5 +1,18 @@
 package Evaluation;
 
+/**
+ * Enfei Zhang
+ * Ms. Krasteva
+ * February 12, 2018
+ * This is a program that creates objects using the Bank_Account and Car classes
+ *
+ * Variable Dictionary
+ * Name         Type            Purpose
+ * John         Bank_Account    Bank_Account object
+ * Jeff         Bank_Account    Bank_Account object
+ * Mazda        Car             Car object
+ * BMW          Car             Car object
+ */
 public class EvaluationDriver {
     public static void main(String[] args) {
         //Objects from Bank_Account class
