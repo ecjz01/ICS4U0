@@ -79,6 +79,6 @@ public class Bank_Account {
      * This method applies interest to the bank account and updates the balance
      */
     public void applyInterest (){
-        balance = balance - (balance * interest_rate);
+        balance = balance + (balance * interest_rate);
     }
 }
