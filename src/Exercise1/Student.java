@@ -52,6 +52,6 @@ public class Student {
      * @return  returns a message saying the students name and what their average was
      */
     public String message() {
-        return name + "You got an " + average;
+        return name + " You got an " + average;
     }
 } // Exercise1.Student class
