@@ -5,7 +5,7 @@ package Evaluation;
  * Ms. Krasteva
  * February 12, 2018
  * This is a program that contains the default constructor and methods for Bank_Account objects
- *
+ * <p>
  * Variable Dictionary
  * Name             Type       Purpose
  * acct_num         long       The account number of the car
@@ -21,12 +21,13 @@ public class Bank_Account {
 
     /**
      * This is the default constructor of Bank_Account objects
-     * @param acct  The account number of the bank account
-     * @param bal   The balance of the bank account
-     * @param ty    The tpe of bank account
-     * @param interest  The interest rate of the bank account
+     *
+     * @param acct     The account number of the bank account
+     * @param bal      The balance of the bank account
+     * @param ty       The tpe of bank account
+     * @param interest The interest rate of the bank account
      */
-    public Bank_Account (long acct, double bal, String ty, float interest){
+    public Bank_Account(long acct, double bal, String ty, float interest) {
         acct_num = acct;
         balance = bal;
         type = ty;
@@ -35,7 +36,8 @@ public class Bank_Account {
 
     /**
      * Returns the bank accounts balance
-     * @return  Returns the balance
+     *
+     * @return Returns the balance
      */
     public double getBalance() {
         return balance;
@@ -43,33 +45,35 @@ public class Bank_Account {
 
     /**
      * Returns the bank accounts type
-     * @return  Returns the type
+     *
+     * @return Returns the type
      */
-    public String getType(){
+    public String getType() {
         return type;
     }
 
     /**
      * Adds money to the bank account
-     * @param amt   The amount of money being deposited
+     *
+     * @param amt The amount of money being deposited
      */
-    public void deposit (double amt){
+    public void deposit(double amt) {
         balance = balance + amt;
     }
 
     /**
      * Takes money from the bank account
-     * @param amt   The amount of money b being taken
-     * @return  The transaction being completed successfully or not
      *
+     * @param amt The amount of money b being taken
+     * @return The transaction being completed successfully or not
+     * <p>
      * If statement checks if there is enough money to be able to withdraw
      */
-    public boolean withdrawal (double amt){
-        if (balance >= amt){
+    public boolean withdrawal(double amt) {
+        if (balance >= amt) {
             balance = balance - amt;
             return true;
-        }
-        else{
+        } else {
             balance = balance + amt;
             return false;
         }
@@ -78,7 +82,7 @@ public class Bank_Account {
     /**
      * This method applies interest to the bank account and updates the balance
      */
-    public void applyInterest (){
+    public void applyInterest() {
         balance *= interest_rate;
     }
 }
