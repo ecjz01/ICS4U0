@@ -4,6 +4,7 @@ import java.awt.*;
 import javax.swing.*;
 
 public class ThreeButtons {
+
     public ThreeButtons(){
         JFrame frame = new JFrame("3 Buttons");
         frame.setSize(240, 90);

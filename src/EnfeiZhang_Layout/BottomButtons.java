@@ -10,10 +10,10 @@ public class BottomButtons {
         frame.setSize(300, 300);
         frame.setLayout(new BorderLayout());
         JPanel borderPane = new JPanel();
-        frame.add(new JButton("top"));
-        frame.add(new JButton("Yes"));
-        frame.add(new JButton("No"));
-        frame.add(new JButton("??"));
+        borderPane.add(new JButton("top"));
+        borderPane.add(new JButton("Yes"));
+        borderPane.add(new JButton("No"));
+        borderPane.add(new JButton("??"));
         frame.setVisible(true);
     }
 
