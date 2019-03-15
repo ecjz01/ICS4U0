@@ -26,6 +26,6 @@ public class RectangularPrism extends Solid{
     }
 
     public double perimeter() {
-        return 4*length+4*width+4*height;
+        return 4*(length+width+height);
     }
 }
