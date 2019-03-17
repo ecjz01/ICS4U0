@@ -12,6 +12,7 @@ public class PersonRecord implements PersonalInfo{
     private int currentAge;
 
     public Calendar getFileCreationDate() {
+        creationDate = Calendar.getInstance();
         return creationDate;
     }
 

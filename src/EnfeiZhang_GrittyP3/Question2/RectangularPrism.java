@@ -17,14 +17,17 @@ public class RectangularPrism extends Solid{
         width = w;
     }
 
+    @Override
     public double volume(){
         return length*height*width;
     }
 
+    @Override
     public double surfaceArea(){
         return 2*(length*width)+2*(length*height)+2*(width*height);
     }
 
+    @Override
     public double perimeter() {
         return 4*(length+width+height);
     }
