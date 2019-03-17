@@ -1,5 +1,3 @@
-package Evaluation;
-
 /**
  * Enfei Zhang
  * Ms. Krasteva

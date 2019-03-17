@@ -16,6 +16,7 @@ public class PersonRecord implements PersonalInfo{
     }
 
     public int getCurrentAge(int birthYear) {
+        currentAge = Calendar.getInstance ().get (Calendar.YEAR) - birthYear;
         return currentAge;
     }
 }

@@ -1,18 +1,16 @@
-package Exercise1;
-
 /**
  * Enfei Zhang
  * Ms. Krasteva
  * February 12, 2018
- * This is a program that creates objects using the House, Car, Animal and Student class
+ * This is a program that creates objects using the House, Car1, Animal and Student class
  *
  * Variable Dictionary
  * Name         Type       Purpose
- * Lamborghini  Car        Car object
- * Mazda        Car        Car object
- * Ford         Car        Car object
- * Infinity     Car        Car object
- * BMW          Car        Car object
+ * Lamborghini  Car1        Car1 object
+ * Mazda        Car1        Car1 object
+ * Ford         Car1        Car1 object
+ * Infinity     Car1        Car1 object
+ * BMW          Car1        Car1 object
  * House1       House      House object
  * Home         House      House object
  * Neighbour    House      House object
@@ -35,12 +33,12 @@ public class Exercise1Driver{
      * The if statement checks if there is a student in that spot in the array
      */
     public static void main(String[] args) {
-        //Objects in the Exercise1.Car class
-        Car Lamborghini = new Car ("Lamborghini", "Miura", 2450,4900);
-        Car Mazda = new Car ("Mazda", "5", 500, 60000);
-        Car Ford = new Car ("Ford", "Explorer", 35200, 70400);
-        Car Infinity = new Car ("Infinity", "Q50", 37500, 75000);
-        Car BMW = new Car ("BMW", "I8", 21000, 42000);
+        //Objects in the Exercise1.Car1 class
+        Car1 Lamborghini = new Car1("Lamborghini", "Miura", 2450,4900);
+        Car1 Mazda = new Car1("Mazda", "5", 500, 60000);
+        Car1 Ford = new Car1("Ford", "Explorer", 35200, 70400);
+        Car1 Infinity = new Car1("Infinity", "Q50", 37500, 75000);
+        Car1 BMW = new Car1("BMW", "I8", 21000, 42000);
         Lamborghini.drive(20);
         Lamborghini.gasUp();
         //Objects in the Exercise1.House class

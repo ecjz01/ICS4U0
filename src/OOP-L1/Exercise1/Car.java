@@ -1,10 +1,8 @@
-package Evaluation;
-
 /**
  * Enfei Zhang
  * Ms. Krasteva
  * February 12, 2018
- * This is a program that contains the default constructor and methods for Car objects
+ * This is a program that contains the default constructor and methods for Car1 objects
  *
  * Variable Dictionary
  * Name         Type       Purpose
@@ -22,7 +20,7 @@ public class Car {
     private double tankCapacity;
 
     /**
-     * This is the default constructor for Car objects
+     * This is the default constructor for Car1 objects
      * @param b The brand of the car
      * @param m The model of the car
      * @param g The amount of gas in the car
@@ -52,11 +50,4 @@ public class Car {
         gas = tankCapacity;
     }
 
-    /**
-     * This is a method that shows the info of the car
-     * @return  This returns the brand and model of the car
-     */
-    public String getInfo(){
-        return brand + " " + model;
-    }
-}
+} // Car1 class

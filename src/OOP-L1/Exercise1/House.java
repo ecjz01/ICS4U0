@@ -1,5 +1,3 @@
-package Exercise1;
-
 /**
  * Enfei Zhang
  * Ms. Krasteva
