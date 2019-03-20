@@ -20,7 +20,21 @@ public class JFrameTest3 extends JFrame implements ActionListener{
   /** This is the constructor for the JFrameTest2 class which creates a window containing a bar with 2 menu options.
    * Along with 2 menu options the window will close if you press the 'X'
    * The one that was already there is the File menu option, which contains a quit item.
-   * What was added is the Help option on the bar along with a help menu item in it.
+   * What was added is the Help option on the bar along with a help menu item in it.<p>
+   *
+   * <b>Local variables: </b>
+   * <p>
+   * <b>quitItem </b> This creates an instance of the JMenuItem class called "Quit".
+   * <p>
+   * <b>helpItem </b> This creates an instance of the JMenuItem class called "Help".
+   * <p>
+   * <b>aboutItem </b> This creates an instance of the JMenuItem class called "About".
+   * <p>
+   * <b>fileMenu </b> This creates an instance of the JMenu class called "File".
+   * <p>
+   * <b>helpMenu </b> This creates an instance of the JMenu class called "Help".
+   * <p>
+   * <b>myMenus </b> This creates an instance of the JMenuBar class.
    */
   public JFrameTest3() {
     super ("JFrame Test");
@@ -75,16 +89,19 @@ public class JFrameTest3 extends JFrame implements ActionListener{
 
     private void aboutDialog(){
       JDialog myDialog = new JDialog(this, "About me");
-      myDialog.setSize(300, 70);
+      JLabel aboutMe = new JLabel("My favourite sport is football (soccer)");
+      aboutMe.setFont(new Font("Serif", Font.PLAIN, 16));
+      myDialog.setSize(300, 100);
       myDialog.setResizable(false);
       myDialog.setLayout(new FlowLayout());
-      JButton aboutMe = new JButton("My favourite sport is football (soccer)");
-      aboutMe.addActionListener(new ActionListener() {
+      JButton closeButton = new JButton("Close");
+      closeButton.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e) {
             myDialog.dispose();
           }
         });
       myDialog.add(aboutMe);
+      myDialog.add(closeButton);
       myDialog.setLocationRelativeTo(this);
       myDialog.setVisible(true);
     }

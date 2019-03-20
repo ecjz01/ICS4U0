@@ -17,7 +17,21 @@ public class JFrameTest extends JFrame {
    * Along with 2 menu options the window will close if you press the 'X'
    * The one that was already there is the File menu option, which contains a quit item.
    * What was added is the Help option on the bar along with a help menu item in it.
+   *
+   * <p>
+   * <b>Local variables: </b>
+   * <p>
+   * <b>quitItem </b> This creates an instance of the JMenuItem class called "Quit".
+   * <p>
+   * <b>helpItem </b> This creates an instance of the JMenuItem class called "Help"
+   * <p>
+   * <b>fileMenu </b> This creates an instance of the JMenu class called "File".
+   * <p>
+   * <b>helpMenu </b> This creates an instance of the JMenu class called "Help"
+   * <p>
+   * <b>myMenus </b> This creates an instance of the JMenuBar class.
    */
+
   public JFrameTest() { 
     super ("JFrame Test");
     JMenuItem quitItem = new JMenuItem ("Quit");

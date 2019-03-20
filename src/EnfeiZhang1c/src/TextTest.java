@@ -30,17 +30,8 @@ public class TextTest extends JPanel {
                     int number = Integer.parseInt(inputField.getText());
                     outputField.setText("The square is " + Integer.toString(number * number));}
                 catch (NumberFormatException n){
-                    JFrame errorWindow = new JFrame("Error");
-                    errorWindow.setSize(200, 200);
-                    errorWindow.setLayout(new FlowLayout());
-                    JButton error = new JButton("Please enter an integer)");
-                    error.addActionListener(new ActionListener() {
-                        public void actionPerformed(ActionEvent e) {
-                            errorWindow.dispose();
-                        }
-                    });
-                    errorWindow.add(error);
-                    errorWindow.setVisible(true); }
+                    outputField.setText("Please enter a valid integer!");
+                    inputField.setText(""); }
             }
         });
 
