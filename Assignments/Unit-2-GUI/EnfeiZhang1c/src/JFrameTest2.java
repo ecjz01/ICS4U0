@@ -8,7 +8,7 @@
  * <h2>Course Info</h2>
  * ICS4U0 with Krasteva V.JFrameTest2
  *
- * @version 19.03.20
+ * @version 19.03.25
  * @author Enfei Zhang
  */
 
@@ -83,6 +83,13 @@ public class JFrameTest2 extends JFrame implements ActionListener{
    * This method opens a dialog box telling a fact about me when
    * the "About" item is chosen from the "Help" menu option on the
    * menu bar
+   *
+   * <p>
+   * <b>Local Variables</b>
+   * <p>
+   * <b>myDialog </b> This creates an instance of the JDialog class called "About me".
+   * <p>
+   * <b>aboutMe </b> This creates an instance of the JButton class called "My favourite sport is football (soccer)".
    */
   private void aboutDialog(){
       JDialog myDialog = new JDialog(this, "About me");
@@ -91,6 +98,10 @@ public class JFrameTest2 extends JFrame implements ActionListener{
       myDialog.setLayout(new FlowLayout());
       JButton aboutMe = new JButton("My favourite sport is football (soccer)");
       aboutMe.addActionListener(new ActionListener() {
+          /**
+           * This method reads what action happens.
+           * @param e is the action that is happening
+           */
         public void actionPerformed(ActionEvent e) {
             myDialog.dispose();
           }
@@ -103,6 +114,13 @@ public class JFrameTest2 extends JFrame implements ActionListener{
   /**
    * This is the method that opens the help dialog box if the user chooses
    * the "Help" item under the "Help" option on the menu bar.
+   *
+   * <p>
+   * <b>Local Variables </b>
+   * <p>
+   * <b>myDialog </b> This creates an instance of the JDialog class called "Help Me".
+   * <p>
+   * <b>helpButton </b> This creates an instance of the JButton class called "Help Me!".
    */
   private void helpDialog(){
     JDialog myDialog = new JDialog(this, "Help Me");
@@ -111,6 +129,10 @@ public class JFrameTest2 extends JFrame implements ActionListener{
     myDialog.setLayout(new FlowLayout());
     JButton helpButton = new JButton("Help Me!");
     helpButton.addActionListener(new ActionListener(){
+        /**
+         * This method reads what action heppens.
+         * @param e is the action that is happening
+         */
       public void actionPerformed(ActionEvent e) {
         myDialog.dispose();
       }
