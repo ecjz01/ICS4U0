@@ -60,7 +60,7 @@ public class LayoutApp extends JFrame {
 
         setJMenuBar(menu);
 
-        setSize(400, 400);
+        setSize(1000, 400);
         setVisible(true);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }

@@ -22,8 +22,8 @@ public class CardLayoutApp extends JFrame {
 
     /**
      * Creates a JTabbedPane that will contain the 6 cards listed above. Creates a JPanel using a 1x2 GridLayout, adds
-     * my two layouts to it to be used as card 2. Creates a JPanel using a Borderlayout, then adds my SpringLayout
-     * NORTH, A list of the layouts and their creators in CENTER, GridBagLayout WEST, GroupLayout EAST, and FlowLayout
+     * my two layouts to it to be used as card 2. Creates a JPanel using a Borderlayout, then adds my FlowLayout
+     * NORTH, A list of the layouts and their creators in CENTER, GroupLayout WEST, GridBagLayout EAST, and SpringLayout
      * SOUTH, setting prefered sizes for each Layout so they can properly fit. Then adds cards to the JTabbedPane for
      * our four layouts, my combined two layouts, and the combination of all these layouts as explained above. Finally,
      * it sets a minimum window size and allows the window to properly close when the 'X' button is pressed.
@@ -47,7 +47,7 @@ public class CardLayoutApp extends JFrame {
         allList.add(new JLabel("GroupLayout - Enfei"));
         allList.add(new JLabel("GridBagLayout - Daniel"));
         allList.add(new JLabel("SpringLayout - Daniel"));
-        allList.setPreferredSize(new Dimension(100, 100));
+        allList.setPreferredSize(new Dimension(50, 100));
         all.add(allList, BorderLayout.CENTER);
 
         JPanel allGroup = new GroupLayoutEnfeiZhang();
@@ -55,11 +55,11 @@ public class CardLayoutApp extends JFrame {
         all.add(allGroup, BorderLayout.WEST);
 
         JPanel allGridBag = new GridBagLayoutDanielVoznyy();
-        allGridBag.setPreferredSize(new Dimension(250, 100));
+        allGridBag.setPreferredSize(new Dimension(400, 100));
         all.add(allGridBag, BorderLayout.EAST);
 
         JPanel allSpring = new SpringLayoutDanielVoznyy();
-        allSpring.setPreferredSize(new Dimension(100, 100)); //TODO set proper dimensions
+        allSpring.setPreferredSize(new Dimension(100, 100));
         all.add(allSpring, BorderLayout.SOUTH);
 
         tabbedPane.addTab("Grid Bag Layout", new GridBagLayoutDanielVoznyy());
@@ -71,7 +71,7 @@ public class CardLayoutApp extends JFrame {
 
         add(tabbedPane, BorderLayout.CENTER);
 
-        setMinimumSize(new Dimension(800, 800));
+        setMinimumSize(new Dimension(900, 900));
         setVisible(true);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
