@@ -9,7 +9,7 @@
  */ 
 public class JFrameTestApp {
   
-     /** This method calls the JFrameTest2 constructor to
+     /** This method calls the JFrameTest3 constructor to
       * create the application.
       * 
       * @param args [ ]  String array that allows command line
