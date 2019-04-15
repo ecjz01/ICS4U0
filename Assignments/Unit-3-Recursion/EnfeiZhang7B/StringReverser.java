@@ -18,9 +18,9 @@ public class StringReverser {
      * @return The string in reverse order
      */
     public static String reverse(String input) {
-        if (input.indexOf(" ") == input.length() - 1)
+        if (input.indexOf('\n') == input.length() - 1)
             return input;
-        return reverse(input.substring(input.indexOf(" ") + 1)) + "\n" + input.substring(0, input.indexOf(" ") + 1);
+        return reverse(input.substring(input.indexOf('\n') + 1)) + "\n" + input.substring(0, input.indexOf(" ") + 1);
     }
 
     /**
@@ -32,7 +32,7 @@ public class StringReverser {
         String input = "";
 
         while (!(input.contains("."))) {
-            input = input + sc.next() + " ";
+            input = input + sc.next() + '\n';
         }
         System.out.println(reverse(input));
     }

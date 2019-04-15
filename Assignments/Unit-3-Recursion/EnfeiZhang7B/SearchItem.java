@@ -11,12 +11,19 @@
 import java.util.Arrays;
 
 public class SearchItem {
+
+    /**
+     * This method searches through a Comparable list to find the Comparable item
+     * @param list The list being searched through
+     * @param item The item to be found
+     * @return
+     */
     public static boolean searchItem(Comparable[] list, Comparable item) {
         if (list.length <= 1)
             return false;
         if (list[list.length - 1].equals(item))
             return true;
-        return searchItem(Arrays.copyOf(list, list.length-1), item) ;
+        return searchItem(Arrays.copyOfRange(list, 0, list.length-1), item) ;
     }
 
     /**
@@ -24,7 +31,7 @@ public class SearchItem {
      * @param args [ ]  String array that allows command line parameters to be used when executing the program.
      */
     public static void main(String[] args) {
-        Comparable[] test = {1, 2, 3, 4, 5};
+        Integer[] test = {1, 2, 3, 4, 5};
         int test2 = 0;
         System.out.println(searchItem(test, test2));
     }
