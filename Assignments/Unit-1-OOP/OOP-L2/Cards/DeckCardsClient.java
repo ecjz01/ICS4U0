@@ -24,6 +24,10 @@ public class DeckCardsClient {
 
         System.out.printf("%-20s%-20s%-20s\n", deck1.deal(), deck1.deal(), deck1.deal());
 
+        deck1.shuffle();
+        for (int x = 0; x < 46; x++) {
+            System.out.println(deck1.deal());
+        }
 
     } // close main method
 

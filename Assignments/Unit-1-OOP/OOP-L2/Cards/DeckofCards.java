@@ -29,7 +29,12 @@ public class DeckofCards {
     }   // end deal() method
 
     public void shuffle() {
-
+        for (int x = 0; x < myDeck.length; x++){
+            Card tempCard = myDeck[x];
+            int swap = (int) Math.random() * 52;
+            myDeck[x] = myDeck[swap];
+            myDeck[swap] = tempCard;
+        }
     }   // end shuffle() method
 }   // close class
 
