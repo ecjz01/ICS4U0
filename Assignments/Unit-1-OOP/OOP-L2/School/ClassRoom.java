@@ -5,7 +5,7 @@
  * ICS4U0 with Krasteva V.
  *
  * @author Enfei Zhang
- * @version 19.04.23
+ * @version 19.04.24
  */
 
 public class ClassRoom {
@@ -13,7 +13,8 @@ public class ClassRoom {
     String teacher;
 
     /**
-     * The constructor of the ClassRoom class
+     * The constructor of the ClassRoom class sets the course and
+     * teacher of the class
      * @param course the course of the class
      * @param teacher the teacher of the class
      */
@@ -29,14 +30,14 @@ public class ClassRoom {
      */
     public boolean enter(Student me) {
         if (me.myLocker == null) {
-            me.sendToOffice("does not have a locker");
+            me.sendToOffice(" does not have a locker ");
             return false;
         } else if (me.myJacket != null) {
-            me.sendToOffice("has to put their jacket in the locker");
+            me.sendToOffice(" has to put their jacket in the locker ");
             return false;
         } else {
             for (Book b : me.books) {
-                if (b.course == course)
+                if (b != null && b.course.equals(course))
                     return true;
             }
             return false;

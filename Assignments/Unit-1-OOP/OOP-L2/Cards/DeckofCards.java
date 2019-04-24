@@ -1,12 +1,15 @@
-// Conlon
-// composition example
-// object code
-
+/**
+ * The DeckofCards class is a DeckofCards object template
+ *
+ * <h2>Course Info</h2>
+ * ICS4U0 with Krasteva V.
+ *
+ * @author Enfei Zhang
+ * @version 19.04.24
+ */
 
 public class DeckofCards {
-
     private Card myDeck[];
-
     private int myCardNum = 0;
 
 
@@ -18,15 +21,14 @@ public class DeckofCards {
         for (int n = 0; n < 52; n++) {
             myDeck[n] = new Card(faces[n % 13], suits[n / 13]);
         }
-    }// end constructor
+    }
 
-    // method to deal cards
     public Card deal() {
         if (myCardNum < 52)
-            return myDeck[myCardNum++]; // post increment:  identifier++
+            return myDeck[myCardNum++];
         else
-            return null;    // = 52 means all 52 cards are dealt
-    }   // end deal() method
+            return null;
+    }
 
     public void shuffle() {
         for (int x = 0; x < myDeck.length; x++){
@@ -35,8 +37,8 @@ public class DeckofCards {
             myDeck[x] = myDeck[swap];
             myDeck[swap] = tempCard;
         }
-    }   // end shuffle() method
-}   // close class
+    }
+}
 
 
 
