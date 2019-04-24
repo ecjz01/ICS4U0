@@ -31,7 +31,7 @@ public class DeckofCards {
     public void shuffle() {
         for (int x = 0; x < myDeck.length; x++){
             Card tempCard = myDeck[x];
-            int swap = (int) Math.random() * 52;
+            int swap = (int) Math.random() * (myDeck.length - 1);
             myDeck[x] = myDeck[swap];
             myDeck[swap] = tempCard;
         }
