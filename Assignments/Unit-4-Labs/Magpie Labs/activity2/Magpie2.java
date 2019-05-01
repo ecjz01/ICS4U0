@@ -46,14 +46,20 @@ public class Magpie2
 		|| statement.contains("dog")){
 			response = "Tell me more about your pets.";
 		}
-		else if (statement.contains("Ms Krasteva")){
+		else if (statement.contains("Krasteva")){
 			response = "She must be a wonderful teacher!";
 		}
 		else if (statement.trim().length() == 0){
 			response = "I'm getting lonely, could you talk to me please?";
 		}
-		else if ((statement.contains("house"))){
+		else if (statement.contains("house")){
 			response = "Tell me where you live?";
+		}
+		else if (statement.contains("sports") || statement.contains("soccer") || statement.contains("basketball") || statement.contains("baseball") || statement.contains("football")){
+			response = "Do you enjoy sports?";
+		}
+		else if (statement.contains("money")){
+			response = "Speaking of money, you got any I could borrow?";
 		}
 		else
 		{
@@ -95,7 +101,6 @@ public class Magpie2
 		else if (whichResponse == 5){
 			response = "Wow, really?";
 		}
-
 		return response;
 	}
 }
