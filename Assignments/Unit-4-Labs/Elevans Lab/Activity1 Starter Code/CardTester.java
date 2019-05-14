@@ -9,11 +9,12 @@ public class CardTester {
 	 */
 	public static void main(String[] args) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-		Card tenOfSpades = new Card ("Ten", "Spades", 11);
-		Card kingOfHearts = new Card("King", "Heart", 17);
-		Card aceOfClubs = new Card("Ace", "Clubs", 17);
+		Card tenOfSpades = new Card ("Ten", "Spades", 10);
+		Card kingOfHearts = new Card("King", "Heart", 13);
+		Card aceOfClubs = new Card("Ace", "Clubs", 1);
+		Card tenOfSpades2 = new Card("Ten", "Spades", 10);
 		tenOfSpades.suit();
-		kingOfHearts.matches(aceOfClubs);
+		System.out.println(kingOfHearts.matches(tenOfSpades2));
 		System.out.println(aceOfClubs.toString());
 	}
 }
