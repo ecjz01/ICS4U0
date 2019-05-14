@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <!--Raleway font-->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!--Skeleton responsive CSS boilerplate-->
+    <link rel="stylesheet" href="Skeleton-2.0.4/css/skeleton.css">
+    <link rel="stylesheet" href="Skeleton-2.0.4/css/normalize.css">
+
+    <title>Arrays & ArrayLists</title>
+</head>
+<header>
+    <center>
+        <style>
+            .button {
+                background-color: blue;
+                color: white;
+                border: 2px solid black;
+                font-size: 20px;
+                text-align: center;
+                transition-duration: 1s;
+            }
+
+            .boxed {
+                border: 1px solid black;
+            }
+
+            .tab {
+                margin-left: 40px;
+            }
+        </style>
+        <a href="index.html" class="button">Home</a>
+        <a href="PastProjectsPage.html" class="button">Past Projects</a>
+        <a href="AboutPage.html" class="button">About</a>
+        <a href="LessonsPage.html" class="button">Lessons</a>
+        <a href="https://github.com/ecjz01/ICS4U0/tree/master/Assignments" class="button">Github</a>
+        <a href="GalleryPage.html" class="button">Gallery</a>
+
+    </center>
+</header>
+<div class="container">
+    <h1>
+        <center><font size="+4" color="black"><b>Enfei Zhang</b></font></center>
+    </h1>
+    <br>
+    <center>
+        <a href="LessonsPage.html" class="button">Back</a>
+    </center>
+    <br>
+    <h1>
+        <font size="+4"><b><u>Arrays & ArrayLists</u></b></font>
+    </h1>
+    <br>
+    <p><font size="+2" style="margin-left: 100px">
+        Arrays and ArrayLists are two integral parts when it comes to programming. Arrays and ArrayLists are both used
+        to store elements of the same type into a list. Arrays however, must have their size predetermined while
+        ArrayLists do not. Arrays can either be instantiated with just a size or the actual elements. ArrayLists are
+        only for objects and not primitive data types (unless you use the Integer, Double or Boolean class) while arrays
+        can use any of them.
+    </font></p>
+    <div class="boxed">
+        <p><code>
+            int[] test = new int[5]
+            <br>
+            int[] test2 = new int[]{1, 2, 3, 4, 5}
+        </code></p>
+    </div>
+    <center>
+        <p><font size="+1">
+            The code above shows an example of declaring an array with the size instantiated or the actual elements
+            being instantiated.
+        </font></p>
+    </center>
+    <p><font size="+2" style="margin-left: 100px">
+        Arrays have one built in method being the length method. The equivalent for ArrayLists is the size() method.
+        Both these methods return the length of their respective lists. These lengths are generally used when you use a
+        for loop to go through each item in the array or ArrayList. However, if you wish to just access each item in the
+        array or ArrayList, you can simply use a for each loop. The for each loop traverses through each item in the
+        array/ArrayList, but never actually edits the list.
+    </font></p>
+    <center>
+        <img src="Images/ForEach.jpg" width="640">
+    </center>
+    <center>
+        <p><font size="+1">
+            The code above is an example of the for each loop going through a String array.
+        </font></p>
+    </center>
+    <p><font size="+2" style="margin-left: 100px">
+        The List interface is the interface that is implemented into ArrayLists. The List interface is an extension of
+        the Collections interface and gives the default methods of void add(int index, Object E), Object remove(int
+        index), Object get(int index), and Object set (int index, Object new). Due to List being an interface you cannot
+        create a list object, but instead you are able to create a ArrayList object.
+    </font></p>
+</div>
+</html>

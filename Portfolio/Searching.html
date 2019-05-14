@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <!--Raleway font-->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!--Skeleton responsive CSS boilerplate-->
+    <link rel="stylesheet" href="Skeleton-2.0.4/css/skeleton.css">
+    <link rel="stylesheet" href="Skeleton-2.0.4/css/normalize.css">
+
+    <title>Searching</title>
+</head>
+<header>
+    <center>
+        <style>
+            .button {
+                background-color: blue;
+                color: white;
+                border: 2px solid black;
+                font-size: 20px;
+                text-align: center;
+                transition-duration: 1s;
+            }
+            .boxed {
+                border: 1px solid black;
+            }
+
+            .tab {
+                margin-left: 40px;
+            }
+        </style>
+        <a href="index.html" class="button">Home</a>
+        <a href="PastProjectsPage.html" class="button">Past Projects</a>
+        <a href="AboutPage.html" class="button">About</a>
+        <a href="LessonsPage.html" class="button">Lessons</a>
+        <a href="https://github.com/ecjz01/ICS4U0/tree/master/Assignments" class="button">Github</a>
+        <a href="GalleryPage.html" class="button">Gallery</a>
+
+    </center>
+</header>
+<div class="container">
+    <h1>
+        <center><font size="+4" color="black"><b>Enfei Zhang</b></font></center>
+    </h1>
+    <br>
+    <center>
+        <a href="LessonsPage.html" class="button">Back</a>
+    </center>
+    <br>
+    <h1>
+        <font size="+4"><b><u>Searching</u></b></font>
+    </h1>
+    <p><font size="+2" style="margin-left: 100px">
+        Searching, like the act of sorting is when you go through an entire list, however unlike sorting you are only
+        looking for a specific item in the list and not trying to rearrange the list. The search method I will go over
+        here will be binary search. Unfortunately binary search will <b>only</b> work on sorted lists. This is because
+        the way binary search works, is that it checks if the middle of the list is number it is looking for. Then if it
+        isn't it splits the list in half and then either takes the greater of smaller half, if the item you are
+        searching for is higher or lower than the middle.
+    </font></p>
+    <center>
+        <img src="Images/Binary.png" width="454">
+    </center>
+    <center>
+        <p><font size="+1">
+            In the example above you can see that it first selects 14 as the middle, because it is in the 5th position
+            because that is the middle of the 9 total positions. It sees that 14 is not 47 and then selects 45 as it is
+            the middle of the remaining options. Then it goes to 47, because it sees that 45 isn't 47 and 47 is the
+            remaining middle of the remaining elements. It then sees that it has found the item in the list.
+        </font></p>
+    </center>
+    <p><font size="+2" style="margin-left: 100px">
+        The average complexity of binary search is O(log n), which is also the worst case scenario. This is because the
+        list will go through at most log n iterations, because it is constantly divided into half. The best case
+        scenario however is O(1), because th best case is when it gets the item it is searching for on the first
+        iteration.
+    </font></p>
+    <div class="boxed">
+        <p><code>
+            <font color="orange">public static int</font> <font color="blue">binarySearch</font>(int arr[], int first, int last, int key){
+            <div class="tab">
+                <font color="orange">if </font>(last>=first){
+                <div class="tab">
+                    int mid = first + (last - first)/<font color="#add8e6">2</font>;
+                    <br>
+                    <font color="orange">if </font>(arr[mid] == key){
+                    <div class="tab">
+                        return mid;
+                        }
+                    </div>
+                    <font color="orange">if </font>(arr[mid] > key){
+                    <div class="tab">
+                        <font color="orange">return </font>binarySearch(arr, first, mid-<font color="#add8e6">1</font>, key);
+                        <br>
+                    </div>
+                    }
+                    <br>
+                    <font color="orange">else</font>{
+                    <div class="tab">
+                        <font color="orange">return </font>binarySearch(arr, mid+<font color="#add8e6">1</font>, last, key);
+                    </div>
+                    }
+                    <br>
+                </div>
+                }
+                <br>
+                <font color="orange">return </font>-1;
+            </div>
+            }
+        </code></p>
+    </div>
+    <center>
+        <p><font size="+1">
+            The code above is an example of binary search taken from <a href="https://www.javatpoint.com/binary-search-in-java">javapoint</a>
+        </font></p>
+    </center>
+</div>
+</html>

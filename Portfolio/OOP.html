@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <!--Raleway font-->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!--Skeleton responsive CSS boilerplate-->
+    <link rel="stylesheet" href="Skeleton-2.0.4/css/skeleton.css">
+    <link rel="stylesheet" href="Skeleton-2.0.4/css/normalize.css">
+
+    <title>OOP</title>
+</head>
+<header>
+    <center>
+        <style>
+            .button {
+                background-color: blue;
+                color: white;
+                border: 2px solid black;
+                font-size: 20px;
+                text-align: center;
+                transition-duration: 1s;
+            }
+
+            .boxed {
+                border: 1px solid black;
+            }
+
+            .tab {
+                margin-left: 40px;
+            }
+        </style>
+        <a href="index.html" class="button">Home</a>
+        <a href="PastProjectsPage.html" class="button">Past Projects</a>
+        <a href="AboutPage.html" class="button">About</a>
+        <a href="LessonsPage.html" class="button">Lessons</a>
+        <a href="https://github.com/ecjz01/ICS4U0/tree/master/Assignments" class="button">Github</a>
+        <a href="GalleryPage.html" class="button">Gallery</a>
+
+    </center>
+</header>
+<div class="container">
+    <h1>
+        <center><font size="+4" color="black"><b>Enfei Zhang</b></font></center>
+    </h1>
+    <br>
+    <center>
+        <a href="LessonsPage.html" class="button">Back</a>
+    </center>
+    <br>
+    <h1>
+        <font size="+4"><b><u>OOP</u></b></font>
+    </h1>
+    <center>
+        <a href="LessonsPage.html" class="button">Don't Fear The OOP</a>
+    </center>
+    <p><font size="+2" style="margin-left: 100px">
+        OOP or Object-Oriented Programming is one of the main concepts when learning to program in Java. The main idea
+        of OOP is that “objects” that can have data as fields and code, are the main focus in your program. Each object
+        will contain a set of attributes (variables) and behaviours (methods). OOP is meant to demonstrate the real
+        world within the program, using “realistic” attributes and behaviours. However, it is important to distinguish
+        that the difference between a class and an object, is that the class acts as a template/blueprint for the object
+        and the object is an instance of that class. In an object oriented program, the access modifiers you use are
+        crucial to making sure your program runs properly. The main three access modifiers are public, protected and
+        private. By default, your variables and methods are declared as public when you do not
+        specify the access modifier. When you use the public modifier, it means that any class may refer to that
+        variable or call the method. A protected modifier means that only the current class and any subclasses of the
+        class refer to that variable or call the method. A private modifier means that only the current class refer to
+        that variable or call the method. Constructors are the templates of the object you have and what actually make
+        the object and set the attributes. The constructors can have any amount of parameters as necessary and if there
+        are no parameters, then that replaces the default constructor of the class (when a version of the object is made
+        without any parameters). When it comes to the behaviours there are three main types of methods in an object’s
+        class, getter, setter and mutator methods. Getter methods are methods that are used to get information about an
+        attribute. Setter methods are methods that are used to set the attributes.
+    </font></p>
+    <center>
+        <img src="Images/Car.jpg">
+        <img src="Images/Truck.jpg">
+        <img src="Images/Van.jpg">
+    </center>
+    <center>
+        <p><font size="+1">
+            As an example of OOP, you could have a car as a main class and then have a Van and Truck that extend the
+            car.
+        </font></p>
+    </center>
+    <p><font size="+2" style="margin-left: 100px">
+        When Creating an Object Oriented Class it is important name the class as appropriate (what the object you are
+        trying to make is). Then it is important to declare your instance variables with the right access modifier as
+        they will be used throughout your program. After doing so you may choose to have a constructor to initialize
+        those variables with proper values when creating those objects. When you are making your methods, it is
+        important to have setters and getters for almost if not all of your instance variables and any other important
+        data. For mutators it is important to make sure that the mutator is a behaviour that the object has.
+    </font></p>
+    <p><font size="+2" style="margin-left: 100px">
+        There are a few important terms to know when it comes to OOP. The first being encapsulation and abstraction.
+        Encapsulation is generally referred to the ability for objects to contain all the methods and variables within
+        them.
+        . Abstraction on the other hand is the act of removing parts of your program, so that you can focus on another
+        part.
+    </font></p>
+    <center>
+        <img src="Images/Encapsulation.jpg">
+    </center>
+    <center>
+        <p><font size="+1">
+            The image above demonstrates how encapsulation works.
+        </font></p>
+    </center>
+    <p><font size="+2" style="margin-left: 100px">
+        Another very important concept in OOP, is inheritance. The definition of inheritance is "a mechanism wherein a
+        new class is derived from an existing class."<sup><a
+            href="https://www.techopedia.com/definition/3226/inheritance-java">1</a> </sup>
+        This can be simplified as a class aquiring the properties of a class above it. Which leads to hierarchy in
+        programs. When creating object oriented programs, you will generally be faced with repeating code. To counteract
+        this you should instead create one main object and extend that object in each of the more specific variations,
+        where you can make the specific changes. The class that is inheriting another class is referred to as the
+        subclass and the class that is being inherited is referred to as the superclass. A keyword you should remember
+        is <b>extend</b>, because this keyword is what allows you to do this with your classes.
+    </font></p>
+    <code>
+        <div class="boxed">
+            class Super {
+            <div class="tab">
+                ...
+                <br>
+                ...
+            </div>
+            }
+            <br>
+            class Sub extends Super {
+            <div class="tab">
+                ...
+                <br>
+                ...
+            </div>
+            }
+        </div>
+    </code>
+    <center>
+        <p><font size="+1">
+            The code above is an example of inheritance as the Sub class inherits the behaviours and attributes of the
+            Super class.
+        </font></p>
+    </center>
+    <p><font size="+2" style="margin-left: 100px">
+        Once you have understood inheritance, a very important thing to know along with that is casting. Casting for
+        objects and classes come in the form of upcasting and downcasting. Firstly, you must know that when you are
+        casting, you're not changing the object, but instead you are labelling it differently. However, you can also
+        cast primitive data types either using one of the methods (Integer.parseInt(), toString, etc) or simply by
+        casting the data type to the variable. When upcasting objects it is done automatically for you, but when
+        downcasting you must do it manually. This is because When you are upcasting it is guarenteed that a Cat is a
+        Mammal, but when downcasting it isn't guarenteed that a mammal is a cat.
+    </font></p>
+    <code>
+        <div class="boxed">
+            Cat c = new Cat();
+            <br>
+            Mammal m = c
+            <br>
+            VS.
+            <br>
+            Cat c1 = new Car();
+            <br>
+            Animal a = c1;
+            <br>
+            Cat c2 = (Cat)a;
+        </div>
+    </code>
+    <center>
+        <p><font size="+1">
+            As you can see the upcasting was done autimatically as you did not have to cast the Mammal object onto the
+            Cat instance of c, while you had to cast the Cat object onto the Animal instance of a.
+        </font></p>
+    </center>
+    <p><font size="+2" style="margin-left: 100px">
+        The final topic I will cover in the first OOP section will be interfaces and abstract classes. Interfaces and
+        abstract classes both act as a template for a class, because when creating an interface or abstract class you do
+        not have to predefine your methods, but the methods must be implemented into and class that implements the
+        interface or extends the abstract class. Although they seem similar they are different. While they both act as
+        templates, you may only provide implementation in methods in an abstract class and not in interfaces, you can
+        only have instance variables in abstract classes and you can only instantiate a subclass of an abstract class.
+        You may be wondering now, how do I know when to use which? Well you would define a class as abstract when you
+        want to extend that class and to create a basic template of the object. So that the subclasses can further
+        define the object and you would define a class as interface when you want to create a template of a class, that
+        will be implemented into another class.
+    </font></p>
+    <center>
+        <img src="Images/AbstractVsInterface.png">
+    </center>
+    <center>
+        <p><font size="+1">
+            The image above shows a slight difference between abstract classes and interfaces.
+        </font></p>
+    </center>
+</div>
+</html>

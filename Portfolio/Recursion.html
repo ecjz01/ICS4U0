@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <!--Raleway font-->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!--Skeleton responsive CSS boilerplate-->
+    <link rel="stylesheet" href="Skeleton-2.0.4/css/skeleton.css">
+    <link rel="stylesheet" href="Skeleton-2.0.4/css/normalize.css">
+
+    <title>Recursion</title>
+</head>
+<header>
+    <center>
+        <style>
+            .button {
+                background-color: blue;
+                color: white;
+                border: 2px solid black;
+                font-size: 20px;
+                text-align: center;
+                transition-duration: 1s;
+            }
+
+            .boxed {
+                border: 1px solid black;
+            }
+
+            .tab {
+                margin-left: 40px;
+            }
+        </style>
+        <a href="index.html" class="button">Home</a>
+        <a href="PastProjectsPage.html" class="button">Past Projects</a>
+        <a href="AboutPage.html" class="button">About</a>
+        <a href="LessonsPage.html" class="button">Lessons</a>
+        <a href="https://github.com/ecjz01/ICS4U0/tree/master/Assignments" class="button">Github</a>
+        <a href="GalleryPage.html" class="button">Gallery</a>
+    </center>
+</header>
+<div class="container">
+    <h1>
+        <center><font size="+4" color="black"><b>Enfei Zhang</b></font></center>
+    </h1>
+    <br>
+    <center>
+        <a href="LessonsPage.html" class="button">Back</a>
+    </center>
+    <br>
+    <h1>
+        <font size="+4"><b><u>Recursion</u></b></font>
+    </h1>
+    <p><font size="+2" style="margin-left: 100px">
+        Recursion is a way to solve problems, like an iterative solution. The criteria for a recursive solution include
+        having a way to reduce the problem into smaller and repetitive elements, being able to find and reach the end of
+        a solution, and creating a larger result from the smaller repetitive elements. The end of a solution is
+        generally referred to as the base case. This is crucial to the solution, because without it the recursive
+        solution will not be able to end. The other main types of recursion other than regular recursion are tail
+        recursion and mutual recursion. Tail recursion, in which your calculations are performed first, so that when you
+        make the recursive call it is sent to the next step in the recursion process. The other type of recursion is
+        mutual recursion, which is the opposite of tail recursion, meaning that the calculations are performed after the
+        recursion.
+    </font></p>
+    <div class="boxed">
+        <p><code>
+            <font color="orange">public static boolean </font> <font color="blue">searchItem</font> (Comparable[] list,
+            Comparable item) {
+            <div class="tab">
+                <font color="orange">if</font> (list.<font color="purple">length</font> <= <font
+                    color="#add8e6">1</font> )
+                <div class="tab">
+                    <font color="orange">return false;</font>
+                </div>
+                <font color="orange">if</font> (list[list.<font color="purple">length</font> - <font
+                    color="#add8e6">1</font>].equals(item))
+                <div class="tab">
+                    <font color="orange">return true;</font>
+                </div>
+                <font color="orange">return </font>searchItem(Arrays.copyOfRange(list, 0, list.<font color="purple">length</font>-<font
+                    color="#add8e6">1</font>), item) ;
+            </div>
+            }
+        </code></p>
+    </div>
+    <center>
+        <p><font size="+1">
+            In the code above it is an example of a recursive solution to find an item in a list.
+        </font></p>
+    </center>
+    <p><font size="+2" style="margin-left: 100px">
+        There are many examples of recursion in the real world.
+        One everyday example of recursion is when a person on a crowded public transit bus is trying to get off. When
+        the person is trying to get off they have to ask the person in front of them to move, which causes them to ask
+        the next person and so on. If the bus is too full those people will then have to get off the bus to let the
+        person off and then come back on.
+    </font></p>
+    <center>
+        <img src="Images/RussianDolls.jpg">
+        <img src="Images/GoogleRecursion.jpg">
+        <img src="Images/WinnieRecursion.gif" width="200">
+    </center>
+    <p><font size="+1">
+        <center>
+            The images above are examples of recursion in outside of code.
+        </center>
+    </font></p>
+    <p><font size="+2" style="margin-left: 100px">
+        You may wonder why you should use recursion in your solutions. There are two main reasons on why you should use
+        recursion. The first being it is easier to understand a recursive method than a non-recursive method, because
+        they are shorter and clearer. The second being the program will directly reflect the abstract solution strategy.
+    </font></p>
+    <p><font size="+2" style="margin-left: 100px">
+        However recursion isn't always great. There are two main problems associated with recursion. The first being
+        that everything that is performed when the method is called: allocating, releasing and copying values into the
+        local memory contribute to the overall time the method takes to complete. The second being every time the method
+        is called, it may be necessary to allocate more space for the parameters and local variables of the method. This
+        is so that the program knows where to go back to when the method has finished. So the amount of space needed may
+        need to be similar to the amount of times the method will be called.
+    </font></p>
+    <div class="boxed">
+        <p><code>
+            <font color="orange">public static int</font> <font color="blue">fibonacci</font>(int x) {
+            <div class="tab">
+                <font color="orange">if </font>(x <= 1)
+                <div class="tab">
+                    <font color="orange">return x;</font>
+                </div>
+                <font color="orange">return </font>fibonacci(x - <font color="#add8e6">1</font>) + fibonacci (x - <font
+                    color="#add8e6">2</font>);
+            </div>
+            }
+        </code></p>
+    </div>
+    <center><p><font size="+1">
+        The code above is an example of a recursive solution for fibonacci. A recursive solution for fibonacci is not
+        efficient as fibonacci(100) takes takes 100 years to run.
+    </font></p></center>
+    <p><font size="+2" style="margin-left: 100px">
+        If you're looking for an alternate solution due to those two problems, an option you could use instead is an
+        iterative solution. An iterative solution means that instead of repeating a method to reduce the problem into
+        smaller sections until a condition is met, you instead set a condition on a loop and then run the loop until the
+        condition is met.
+    </font></p>
+    <div class="boxed">
+        <p><code>
+            <font color="orange">public static int</font> <font color="blue">fibonacciLoop</font>(int nthNumber) {
+            <div class="tab">
+                int prevPrevNum, prevNum = <font color="#add8e6">0</font>, curNum = <font color="#add8e6">1</font>;
+                <br>
+                for (int i = <font color="#add8e6">1</font>; i < nthNumber ; i++) {
+                <div class="tab">
+                    prevPrevNum = prevNum;
+                    <br>
+                    prevNum = curNum;
+                    <br>
+                    curNum= prevPrevNum + prevNum;
+                </div>
+                }
+                <font color="orange">return </font>currentNumber;
+            </div>
+            }
+        </code></p>
+    </div>
+    <center><p><font size="+1">
+        The code above is an example of a iterative solution for fibonacci. An iterative solution for fibonacci is more
+        efficient as fibonacci(100) will only take milliseconds to run.
+    </font></p></center>
+</div>
+</html>

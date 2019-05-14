@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <!--Raleway font-->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!--Skeleton responsive CSS boilerplate-->
+    <link rel="stylesheet" href="Skeleton-2.0.4/css/skeleton.css">
+    <link rel="stylesheet" href="Skeleton-2.0.4/css/normalize.css">
+
+    <title>OOP</title>
+</head>
+<header>
+    <center>
+        <style>
+            .button {
+                background-color: blue;
+                color: white;
+                border: 2px solid black;
+                font-size: 20px;
+                text-align: center;
+                transition-duration: 1s;
+            }
+
+            .boxed {
+                border: 1px solid black;
+            }
+
+            .tab {
+                margin-left: 40px;
+            }
+
+            p {
+                white-space: pre;
+            }
+        </style>
+        <a href="index.html" class="button">Home</a>
+        <a href="PastProjectsPage.html" class="button">Past Projects</a>
+        <a href="AboutPage.html" class="button">About</a>
+        <a href="LessonsPage.html" class="button">Lessons</a>
+        <a href="https://github.com/ecjz01/ICS4U0/tree/master/Assignments" class="button">Github</a>
+        <a href="GalleryPage.html" class="button">Gallery</a>
+
+    </center>
+</header>
+<div class="container">
+    <h1>
+        <center><font size="+4" color="black"><b>Enfei Zhang</b></font></center>
+    </h1>
+    <br>
+    <center>
+        <a href="LessonsPage.html" class="button">Back</a>
+    </center>
+    <br>
+    <h1>
+        <font size="+4"><b><u>A Story in OOP</u></b></font>
+    </h1>
+    <p>
+        <font size="+2" style="color: green">
+            Every coral reef has a few key ingredients: fish, corals, seaweed, level of salt, and some predators. A
+            standard
+            coral reef would have 100 fish, and be located in one of the Earth’s many oceans
+        </font>
+        <font size="+2" style="color: orange">
+            CoralReef
+            has a certain number of fish
+            has a certain number of corals
+            has a certain number of seaweed
+            has a certain number of predators
+            is located in a specific ocean
+            a typical CoralReef would have
+            number of fish = 100
+            location = Atlantic Ocean
+        </font>
+    </p>
+
+    <font size="+2" style="color: red">
+        <code>
+            public class CoralReef
+            {
+            <div class="tab">
+                int fish;
+                <br>
+                int corals;
+                <br>
+                int seaweed;
+                <br>
+                int predators;
+                <br>
+                String oceanName;
+                <br>
+                public CoralReef()
+                {
+                <div class="tab">
+                    fish = 100;
+                    location = "Atlantic Ocean";
+                </div>
+                }
+            </div>
+            }
+        </code>
+    </font>
+
+    <p>
+        <font size="+2" style="color: green">
+            The Shark Attack at the Insignificant Coral Reef. This story takes place in a Coral Reef called
+            Insignificant Coral
+            Reef. Insignificant Coral Reef has one seaweed, 3 corals, and five predators.
+        </font>
+        <font size="+2" style="color: orange">
+            Main SharkAttack
+            Coral Reef insignificantCoralReef is a new Coral Reef.
+            the number of seaweed in insignificantCoralReef is one.
+            the number of corals in insignificantCoralReef is three.
+            the number of predators is five.
+        </font>
+    </p>
+
+    <font size="+2" style="color: red">
+        <code>
+            public class SharkAttack
+            {
+            <div class="tab">
+                public static void main (String arguments[])
+                {
+                <div class="tab">
+                    WesternTown sweatyPost = new WesternTown;
+                    <br>
+                    sweatyPost.saloons = 2;
+                    <br>
+                    sweatyPost.sheriffs = 1;
+                    <br>
+                    sweatyPost.troublemakers = 5;
+                </div>
+                }
+            </div>
+            }
+        </code>
+    </font>
+
+    <br>
+
+    <p>
+        <font size="+2" style="color: green">
+            "All fish start out with two fins, a tail, eyes, a nose, gills, and a mouth. They are either male or female,
+            have a
+            name, a species, and have different diet. If someone asks, fish can make some bubbles."
+        </font>
+        <font size="+2" style="color: orange">
+            Fish
+            have a certain number of fins
+            have a certain number of tails
+            have a certain number of eyes
+            have a certain number of noses
+            have a certain number of gills
+            have a certain number of mouths
+            have a name
+            have a certain sex
+            have a species
+            have a diet
+            A standard fish would start with
+            two fins
+            one tail
+            two eyes
+            one nose
+            two gills
+            one mouth
+            When someone asks for bubbles make bubbles
+        </font>
+    </p>
+
+    <font size="+2" style="color: red">
+        <code>
+            public class Fish {
+            <div class="tab">
+                int fins;
+                <br>
+                int tails;
+                <br>
+                int eyes;
+                <br>
+                int nose;
+                <br>
+                int gills;
+                <br>
+                int mouth;
+                <br>
+                String name;
+                <br>
+                String sex;
+                <br>
+                String species;
+                <br>
+                String diet;
+                <br>
+                public Fish() {
+                <div class="tab">
+                    fins = 2;
+                    <br>
+                    tails = 1;
+                    <br>
+                    eyes = 2;
+                    <br>
+                    nose = 1;
+                    <br>
+                    mouth = 1;
+                </div>
+                }
+                <br>
+                public String makeBubbles()
+                {
+                <div class="tab">
+                    String bubbles = name + “ blew some bubbles”;
+                    <br>
+                    return bubbles;
+                </div>
+                }
+            </div>
+            }
+        </code>
+    </font>
+
+    <p>
+        <font size="+2" style="color: green">
+            Predators are based on the idea of fish. They are identical, except that they have some additional
+            qualities, namely
+            sharp teeth, a certain species of fish, some level of salt in their veins, and a certain amount of fish
+            eaten. Your
+            standard predator will look mean, start the day out without any salt in their veins, and not yet eaten any
+            fish.
+            Whenever the predator gets hungry, the amount of fish eaten will go up by one. If someone asks a predator
+            how much
+            fish they have eaten, the predator will always respond with the amount of fish eaten. If the predator is not
+            having
+            a good time in the water, then add one to the predators salt level. Then print out "Oh no! (the specified
+            predator)
+            isn’t having a good time!"
+        </font>
+        <font size="+2" style="color: orange">
+            Predators extends the idea of Fish.
+            Every predator has sharp teeth.
+            Every predator has a species.
+            Every predator will have some level of salt in their veins.
+            Every predator will eat a certain amount of fish.
+
+            For a given Predator,
+            They will have sharp teeth.
+            They will be a certain species/
+            They will start out with a salt level of 0.
+            They will start out with no fish eaten.
+
+            notHavingAGoodTime saltLevel increases by one
+            howUpsetAmI tell them how salty they are
+            eatAFish (name) add one to the number of fish this predator has eaten. print "Oh no! (the specified fish)
+            has been
+            eaten!"
+        </font>
+    </p>
+
+    <font size="+2" style="color: red">
+        <code>
+            public class Predators extends Fish
+            {
+            <div class="tab">
+                boolean sharpTeeth;
+                <br>
+                String species;
+                <br>
+                int saltLevel;
+                <br>
+                int fishEaten;
+                <br>
+                Fish fish;
+                <br>
+                public Villains()
+                {
+                <div class="tab">
+                    sharpTeeth = true;
+                    <br>
+                    saltLevel = 0;
+                    <br>
+                    fishEaten = 0;
+                </div>
+                }
+                <br>
+                public void notHavingAGoodTime()
+                {
+                <div class="tab">
+                    saltLevel++;
+                </div>
+                }
+                <br>
+                public int howUpsetAmI()
+                {
+                <div class="tab">
+                    return saltLevel;
+                </div>
+                }
+                <br>
+                public void eatAFish (Fish fish)
+                {
+                <div class="tab">
+                    this.fish= fish;
+                    <br>
+                    fishEaten++;
+                    <br>
+                    System.out.println("The Predator has eaten " + fish.whatIsYourName());
+                </div>
+                }
+            </div>
+            }
+        </code>
+    </font>
+
+    <p>
+        <font size="+2" style="color: green">
+            Here is the main plot of the Coral Reef at the Atlantic Ocean: There is a Coral Reef called the Great
+            Barrier Reef,
+            where there are 100 fish 3 coral, 1 seaweed and 5 predators. There is a predator, that is named Jim. Jim has
+            sharp
+            teeth, is male, and is a piranha. Jim prefers other kinds of fish to eat. Bob is a female fish. She is a
+            butterflyfish and likes to eat seaweed. In our story, Jim starts out with being in a very unhappy mood. He
+            then lets
+            everyone know how salty he is, and then eats a fish named Bob.
+        </font>
+        <font size="+2" style="color: orange">
+            Here is the main plot of PiranhaAttack at the Coral Reef;
+
+            There is a Coral Reef called insignificantCoralReef;
+            insignificantCoralReef has 3 coral;
+            insignificantCoralReef has 1 seaweed;
+            insignificantCoralReef has 5 predators;
+
+            There is a new predator named Jim;
+            jim has sharp teeth;
+            jim is a piranha;
+            jim is male;
+            jim prefers other fish;
+
+            There is a new fish named Bob;
+            bob is female;
+            bob prefers seaweed;
+            bob is a butterfly fish
+            jim becomes a bit upset;
+            jim tells us how upset he is;
+            jim eats bob
+        </font>
+    </p>
+
+    <font size="+2" style="color: red">
+        <code>
+            public class FishStory
+            {
+            <div class="tab">
+                public static void main(String args[])
+                {
+                <div class="tab">
+                    CoralReef insignificantCoralReef = new CoralReef();
+                    <br>
+                    Predators jim = new Predators();
+                    <br>
+                    Jim.name = “Jim”;
+                    <br>
+                    jim.sharpTeeth = true;
+                    <br>
+                    jim.species = "piranha";
+                    <br>
+                    jim.sex = "Male";
+                    <br>
+                    jim.foodPreference = "Fish";
+                    <br>
+                    Fish bob = new Fish();
+                    <br>
+                    bob.sex = "Female";
+                    <br>
+                    bob.foodPreference = "Seaweed";
+                    <br>
+                    bob.name = "Bob";
+                    <br>
+                    jim.notHavingAGoodTime();
+                    <br>
+                    System.out.println(jim.howUpsetIAm());
+                    <br>
+                    jim.eatAFish(bob);
+                </div>
+                }
+            </div>
+            }
+        </code>
+    </font>
+</div>
+</html>
