@@ -3,6 +3,8 @@
 // Deck of cards "has a" card
 
 
+import java.util.Arrays;
+
 public class Card {
 
     String myFace;
@@ -23,6 +25,7 @@ public class Card {
 
         return myFace + " of " + mySuit;
     }
+
 } // close class
 
 
