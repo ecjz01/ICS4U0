@@ -84,7 +84,7 @@ public class Shuffler {
      */
     public static void selectionShuffle(int[] values) {
         for (int x = values.length - 1; x > 0; x--) {
-            int y = (int) (Math.random() * (x + 1)); //generate random integer between 0 and k inclusive
+            int y = (int) (Math.random() * (x + 1));    //Random number from 0 to x inclusive
             int temp = values[y];
             values[y] = values[x];
             values[x] = temp;

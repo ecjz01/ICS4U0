@@ -8,14 +8,14 @@ public class DeckTester {
 	 *	@param args is not used.
 	 */
 	public static void main(String[] args) {
-		String[] deck1Ranks = {"King", "Ace", "Four", "Ten", "Two", "Jack", "Queen"};
-		String[] deck1Suits = {"Spade", "Heart", "Club", "Diamond", "Spade", "Spade", "Heart"};
-		int[] deck1Values = {13, 1, 4, 10, 2, 11, 12};
+		String[] deck1Ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+		String[] deck1Suits = {"Spade", "Heart", "Club", "Diamond"};
+		int[] deck1Values = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 		Deck deck1 = new Deck(deck1Ranks, deck1Suits, deck1Values);
 
-		String[] deck2Ranks = {"Seven", "King", "Queen", "Five", "Ace", "Jack", "Eight"};
-		String[] deck2Suits = {"Spade", "Heart", "Club", "Diamond", "Spade", "Spade", "Diamond"};
-		int[] deck2Values = {7, 13, 12, 5, 1, 11, 8};
+		String[] deck2Ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+		String[] deck2Suits = {"Spade", "Heart", "Club", "Diamond"};
+		int[] deck2Values = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 		Deck deck2 = new Deck(deck2Ranks, deck2Suits, deck2Values);
 
 		String[] deck3Ranks = new String[0];
