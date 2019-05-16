@@ -156,10 +156,11 @@ public class PictureTester
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    //testCollage();
+    testCollage();
+    testMyCollage();
     //testCopy();
     //testEdgeDetection();
-    testMyEdgeDetection();
+    //testMyEdgeDetection();
     //testChromakey();
     //testEncodeAndDecode();
     //testGetCountRedOverValue(250);

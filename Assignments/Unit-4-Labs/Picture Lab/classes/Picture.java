@@ -350,21 +350,26 @@ public class Picture extends SimplePicture {
   }
 
   public void myCollage() {
-    Picture sans1 = new Picture("sans.jpg").scale(0.3, 0.3);
-    Picture sans2 = new Picture("sans.jpg").scale(0.3, 0.3);
-    Picture sans3 = new Picture("sans.jpg").scale(0.5, 0.5);
+    Picture fish1 = new Picture("Blobfish.jpg").scale(0.9, 0.9);
+    Picture fish2 = new Picture("Blobfish.jpg").scale(1, 1);
+    Picture fish3 = new Picture("Blobfish.jpg").scale(1.5, 1.5);
 
-    sans1.grayscale();
-    this.copy(sans1, 0, 0);
-    sans1.mirrorDiagonal();
-    this.copy(sans1, 0, 300);
+    fish1.grayscale();
+    this.copy(fish1, 0, 0);
 
-    sans2.fixUnderwater();
-    this.copy(sans2, 100, 0);
+    fish1.mirrorDiagonal();
 
-    sans3.zeroBlue();
-    sans3.negate();
-    this.copy(sans3, 200, 0);
+    this.copy(fish1, 0, 300);
+
+    fish2.fixUnderwater();
+    fish2.zeroBlue();
+    fish2.negate();
+
+    this.copy(fish2, 100, 0);
+
+    fish3.zeroBlue();
+    fish3.negate();
+    this.copy(fish3, 200, 0);
 
   }
 
@@ -409,11 +414,11 @@ public class Picture extends SimplePicture {
     Pixel[][] pixels = this.getPixels2D();
     Color rightColor;
     Color bottomColor;
-    for (int row = 0; row < pixels.length - 2; row++) {
-      for (int col = 0; col < pixels[0].length - 2; col++) {
-        leftPixel = pixels[row][col];
-        rightPixel = pixels[row][col + 2];
-        bottomPixel = pixels[row + 2][col];
+    for (int x = 0; x < pixels.length - 2; x++) {
+      for (int y = 0; y < pixels[0].length - 2; y++) {
+        leftPixel = pixels[x][y];
+        rightPixel = pixels[x][y + 2];
+        bottomPixel = pixels[x + 2][y];
 
         rightColor = rightPixel.getColor();
         bottomColor = bottomPixel.getColor();
